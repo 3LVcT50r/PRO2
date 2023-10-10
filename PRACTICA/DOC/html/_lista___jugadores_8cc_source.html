@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Circuito de torneos de tenis: Fichero Fuente Lista_Jugadores.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Circuito de torneos de tenis
+   &#160;<span id="projectnumber">version-2 mayo-2022 por Víctor Hernández Barragán</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Lista_Jugadores.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_lista___jugadores_8cc.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_lista___jugadores_8hh.html">Lista_Jugadores.hh</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//Private</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_lista___jugadores.html#ad5a2e05e454611978b188a92e64400ef">    9</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_lista___jugadores.html#ad5a2e05e454611978b188a92e64400ef">Lista_Jugadores::comp</a>(<span class="keyword">const</span> <a class="code" href="struct_lista___jugadores_1_1_ranking.html">Ranking</a> &amp;j1, <span class="keyword">const</span> <a class="code" href="struct_lista___jugadores_1_1_ranking.html">Ranking</a> &amp;j2) {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <span class="keywordflow">if</span> (j1.<a class="code" href="struct_lista___jugadores_1_1_ranking.html#ad3289cbbfb9862a0833a9e5a454cc9f3">punti</a> == j2.<a class="code" href="struct_lista___jugadores_1_1_ranking.html#ad3289cbbfb9862a0833a9e5a454cc9f3">punti</a>) <span class="keywordflow">return</span> j1.<a class="code" href="struct_lista___jugadores_1_1_ranking.html#a20a8a9d8275a99e2fc63c5319ae12711">ranki</a> &lt; j2.<a class="code" href="struct_lista___jugadores_1_1_ranking.html#a20a8a9d8275a99e2fc63c5319ae12711">ranki</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">return</span> j1.<a class="code" href="struct_lista___jugadores_1_1_ranking.html#ad3289cbbfb9862a0833a9e5a454cc9f3">punti</a> &gt; j2.<a class="code" href="struct_lista___jugadores_1_1_ranking.html#ad3289cbbfb9862a0833a9e5a454cc9f3">punti</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//Public</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_lista___jugadores.html#a0ff185c585e5c7ddf570d35e5f32e43a">   16</a></span>&#160;<a class="code" href="class_lista___jugadores.html#a0ff185c585e5c7ddf570d35e5f32e43a">Lista_Jugadores::Lista_Jugadores</a>() {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <a class="code" href="class_jugador.html">Jugador</a> jug;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordtype">string</span> ide = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <a class="code" href="class_lista___jugadores.html#a0b6bf513055773dcfcca635be585f669">numero_jugadores</a> = 0;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">ranking</a> = {};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_lista___jugadores.html#af3d258d09e11524403503496e9dd0079">   23</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lista___jugadores.html#af3d258d09e11524403503496e9dd0079">Lista_Jugadores::nuevo_jugador</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;p) {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="class_jugador.html">Jugador</a> njug;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  njug.<a class="code" href="class_jugador.html#a996e49e7129ee3d62df8426d400bbdc8">mod_ranking</a>(<a class="code" href="class_lista___jugadores.html#a0b6bf513055773dcfcca635be585f669">numero_jugadores</a> + 1);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="class_lista___jugadores.html#ad6af7dd54e4b2eff73ae3a92bc1ea4d8">ljug</a>.insert(make_pair(p, njug));</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="struct_lista___jugadores_1_1_ranking.html">Ranking</a> j_rnk;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  j_rnk.<a class="code" href="struct_lista___jugadores_1_1_ranking.html#ab5524b619ee32e8ba882e29386382edb">nombre</a> = p;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  j_rnk.<a class="code" href="struct_lista___jugadores_1_1_ranking.html#ad3289cbbfb9862a0833a9e5a454cc9f3">punti</a> = 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  j_rnk.<a class="code" href="struct_lista___jugadores_1_1_ranking.html#a20a8a9d8275a99e2fc63c5319ae12711">ranki</a> = <a class="code" href="class_lista___jugadores.html#a0b6bf513055773dcfcca635be585f669">numero_jugadores</a> +1;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <a class="code" href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">ranking</a>.push_back(j_rnk);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="class_lista___jugadores.html#a0b6bf513055773dcfcca635be585f669">numero_jugadores</a> = <a class="code" href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">ranking</a>.size();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_lista___jugadores.html#acc5254c4440ecdb9567d114181e4c8d9">   38</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lista___jugadores.html#acc5254c4440ecdb9567d114181e4c8d9">Lista_Jugadores::baja_jugador</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;p) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  map&lt;string,Jugador&gt;::iterator ite = <a class="code" href="class_lista___jugadores.html#ad6af7dd54e4b2eff73ae3a92bc1ea4d8">ljug</a>.find(p);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">int</span> rank = ite-&gt;second.cons_ranking();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="class_lista___jugadores.html#ad6af7dd54e4b2eff73ae3a92bc1ea4d8">ljug</a>.erase(ite);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="comment">//Actualizar vector Ranking</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = rank-1; i &lt; <a class="code" href="class_lista___jugadores.html#a0b6bf513055773dcfcca635be585f669">numero_jugadores</a>-1; ++i) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_lista___jugadores.html#ad6af7dd54e4b2eff73ae3a92bc1ea4d8">ljug</a>[<a class="code" href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">ranking</a>[i+1].nombre].mod_ranking(<a class="code" href="class_lista___jugadores.html#ad6af7dd54e4b2eff73ae3a92bc1ea4d8">ljug</a>[<a class="code" href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">ranking</a>[i+1].nombre].cons_ranking() - 1);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    --<a class="code" href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">ranking</a>[i+1].ranki;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">ranking</a>[i] = <a class="code" href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">ranking</a>[i+1];</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">ranking</a>.pop_back();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="class_lista___jugadores.html#a0b6bf513055773dcfcca635be585f669">numero_jugadores</a> = <a class="code" href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">ranking</a>.size();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_lista___jugadores.html#a86113ba11b583ee36e2895080544593d">   55</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lista___jugadores.html#a86113ba11b583ee36e2895080544593d">Lista_Jugadores::act_punt_jug</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;part, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;punt) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  map&lt;string,Jugador&gt;::iterator it = <a class="code" href="class_lista___jugadores.html#ad6af7dd54e4b2eff73ae3a92bc1ea4d8">ljug</a>.find(part);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">if</span> (it != <a class="code" href="class_lista___jugadores.html#ad6af7dd54e4b2eff73ae3a92bc1ea4d8">ljug</a>.end()) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    it-&gt;second.mod_puntos(-punt);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">int</span> i = it-&gt;second.cons_ranking();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">ranking</a>[i-1].punti -= punt;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_lista___jugadores.html#a38e95ae9b6e688551a7c51af6436d23f">   64</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lista___jugadores.html#a38e95ae9b6e688551a7c51af6436d23f">Lista_Jugadores::mod_estadisticas</a>(<span class="keyword">const</span> vector&lt;string&gt; &amp;v, <span class="keyword">const</span> Matriz &amp;est, <span class="keyword">const</span> vector&lt;int&gt; &amp;puntos) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">int</span> psize = v.size();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  map&lt;string,Jugador&gt;::iterator it = <a class="code" href="class_lista___jugadores.html#ad6af7dd54e4b2eff73ae3a92bc1ea4d8">ljug</a>.begin();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; psize; ++i) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    it = <a class="code" href="class_lista___jugadores.html#ad6af7dd54e4b2eff73ae3a92bc1ea4d8">ljug</a>.find(v[i]);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    it-&gt;second.mod_torn_jugados(1);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    it-&gt;second.mod_wm(est[i][0]);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    it-&gt;second.mod_lm(est[i][1]);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    it-&gt;second.mod_wg(est[i][2]);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    it-&gt;second.mod_lg(est[i][3]);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    it-&gt;second.mod_ws(est[i][4]);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    it-&gt;second.mod_ls(est[i][5]);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    it-&gt;second.mod_puntos(puntos[i]);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">int</span> rank_anterior = it-&gt;second.cons_ranking();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">ranking</a>[rank_anterior - 1].punti += puntos[i];</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_lista___jugadores.html#ad137f80fef3c5b8b43293e6beb5d29b3">   84</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lista___jugadores.html#ad137f80fef3c5b8b43293e6beb5d29b3">Lista_Jugadores::ordenar</a>() {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  sort(<a class="code" href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">ranking</a>.begin(), <a class="code" href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">ranking</a>.end(), <a class="code" href="class_lista___jugadores.html#ad5a2e05e454611978b188a92e64400ef">comp</a>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_lista___jugadores.html#a0b6bf513055773dcfcca635be585f669">numero_jugadores</a>; ++i) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="class_lista___jugadores.html#ad6af7dd54e4b2eff73ae3a92bc1ea4d8">ljug</a>[<a class="code" href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">ranking</a>[i].nombre].mod_ranking(i+1);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">ranking</a>[i].ranki = i+1;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_lista___jugadores.html#ab0d4ef534908e57326ee65929ae412c6">   92</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="class_lista___jugadores.html#ab0d4ef534908e57326ee65929ae412c6">Lista_Jugadores::cons_nombre_jugador</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;r)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">ranking</a>[r-1].nombre;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_lista___jugadores.html#acde1fcb983f382e2d1aeb6af661157c8">   96</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_lista___jugadores.html#acde1fcb983f382e2d1aeb6af661157c8">Lista_Jugadores::num_jugadores</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_lista___jugadores.html#a0b6bf513055773dcfcca635be585f669">numero_jugadores</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_lista___jugadores.html#a526cf7437629bc39c95b75c6b9f6b56b">  100</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_lista___jugadores.html#a526cf7437629bc39c95b75c6b9f6b56b">Lista_Jugadores::identificador_jugador</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;ide)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  map&lt;string,Jugador&gt;::const_iterator it = <a class="code" href="class_lista___jugadores.html#ad6af7dd54e4b2eff73ae3a92bc1ea4d8">ljug</a>.find(ide);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordflow">if</span> (it != <a class="code" href="class_lista___jugadores.html#ad6af7dd54e4b2eff73ae3a92bc1ea4d8">ljug</a>.end()) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="class_lista___jugadores.html#af1633c98c5c01bc3b2a3df0842e0ba55">  106</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lista___jugadores.html#af1633c98c5c01bc3b2a3df0842e0ba55">Lista_Jugadores::leer</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;j) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <a class="code" href="class_lista___jugadores.html#a0b6bf513055773dcfcca635be585f669">numero_jugadores</a> = j;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  vector&lt;Ranking&gt; v_rnk(j);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; j; ++i) {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">string</span> ide;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    cin &gt;&gt; ide;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="class_jugador.html">Jugador</a> jug;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    jug.<a class="code" href="class_jugador.html#a996e49e7129ee3d62df8426d400bbdc8">mod_ranking</a>(i+1);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="class_lista___jugadores.html#ad6af7dd54e4b2eff73ae3a92bc1ea4d8">ljug</a>.insert(make_pair(ide, jug));</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="struct_lista___jugadores_1_1_ranking.html">Ranking</a> j_rnk;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    j_rnk.<a class="code" href="struct_lista___jugadores_1_1_ranking.html#ab5524b619ee32e8ba882e29386382edb">nombre</a> = ide;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    j_rnk.<a class="code" href="struct_lista___jugadores_1_1_ranking.html#ad3289cbbfb9862a0833a9e5a454cc9f3">punti</a> = 0;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    j_rnk.<a class="code" href="struct_lista___jugadores_1_1_ranking.html#a20a8a9d8275a99e2fc63c5319ae12711">ranki</a> = i+1;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    v_rnk[i] = j_rnk;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <a class="code" href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">ranking</a> = v_rnk;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="class_lista___jugadores.html#a0eb888209d398b7737fd304093dea8d6">  129</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lista___jugadores.html#a0eb888209d398b7737fd304093dea8d6">Lista_Jugadores::listar_ranking</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_lista___jugadores.html#a0b6bf513055773dcfcca635be585f669">numero_jugadores</a>; ++i) {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    cout &lt;&lt; i+1 &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; <a class="code" href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">ranking</a>[i].nombre &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; <a class="code" href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">ranking</a>[i].punti &lt;&lt; endl;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="class_lista___jugadores.html#a04414cb5228feaa5fd3945bee10be92f">  136</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lista___jugadores.html#a04414cb5228feaa5fd3945bee10be92f">Lista_Jugadores::listar_jugadores</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  cout &lt;&lt; <a class="code" href="class_lista___jugadores.html#a0b6bf513055773dcfcca635be585f669">numero_jugadores</a> &lt;&lt; endl;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keywordflow">for</span> (map&lt;string,Jugador&gt;::const_iterator it = <a class="code" href="class_lista___jugadores.html#ad6af7dd54e4b2eff73ae3a92bc1ea4d8">ljug</a>.begin(); it != <a class="code" href="class_lista___jugadores.html#ad6af7dd54e4b2eff73ae3a92bc1ea4d8">ljug</a>.end(); ++it) {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    cout &lt;&lt; it-&gt;first &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Rk:&quot;</span> &lt;&lt; it-&gt;second.cons_ranking() &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Ps:&quot;</span> &lt;&lt; it-&gt;second.cons_puntos() &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Ts:&quot;</span> &lt;&lt; it-&gt;second.cons_torn_jugados() &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;WM:&quot;</span> &lt;&lt; it-&gt;second.cons_wm() &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;LM:&quot;</span> &lt;&lt; it-&gt;second.cons_lm() &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;WS:&quot;</span> &lt;&lt; it-&gt;second.cons_ws() &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;LS:&quot;</span> &lt;&lt; it-&gt;second.cons_ls() &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;WG:&quot;</span> &lt;&lt; it-&gt;second.cons_wg() &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;LG:&quot;</span> &lt;&lt; it-&gt;second.cons_lg() &lt;&lt; endl;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  }</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;}</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="class_lista___jugadores.html#a40a26f4d41cf60121990bf51fd0c28ad">  153</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lista___jugadores.html#a40a26f4d41cf60121990bf51fd0c28ad">Lista_Jugadores::consultar_jugador</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;p)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  map&lt;string,Jugador&gt;::const_iterator it = <a class="code" href="class_lista___jugadores.html#ad6af7dd54e4b2eff73ae3a92bc1ea4d8">ljug</a>.find(p);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  cout &lt;&lt; it-&gt;first &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Rk:&quot;</span> &lt;&lt; it-&gt;second.cons_ranking() &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Ps:&quot;</span> &lt;&lt; it-&gt;second.cons_puntos() &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;Ts:&quot;</span> &lt;&lt; it-&gt;second.cons_torn_jugados() &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;WM:&quot;</span> &lt;&lt; it-&gt;second.cons_wm() &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;LM:&quot;</span> &lt;&lt; it-&gt;second.cons_lm() &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;WS:&quot;</span> &lt;&lt; it-&gt;second.cons_ws() &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;LS:&quot;</span> &lt;&lt; it-&gt;second.cons_ls() &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;WG:&quot;</span> &lt;&lt; it-&gt;second.cons_wg() &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;LG:&quot;</span> &lt;&lt; it-&gt;second.cons_lg() &lt;&lt; endl;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div>
+<div class="ttc" id="a_lista___jugadores_8hh_html"><div class="ttname"><a href="_lista___jugadores_8hh.html">Lista_Jugadores.hh</a></div><div class="ttdoc">Especificación de la clase Lista_Jugadores.</div></div>
+<div class="ttc" id="aclass_jugador_html"><div class="ttname"><a href="class_jugador.html">Jugador</a></div><div class="ttdoc">Representa a un jugador con ciertos atrivutos y sus operaciones.</div><div class="ttdef"><b>Definition:</b> <a href="_jugador_8hh_source.html#l00016">Jugador.hh:16</a></div></div>
+<div class="ttc" id="aclass_jugador_html_a996e49e7129ee3d62df8426d400bbdc8"><div class="ttname"><a href="class_jugador.html#a996e49e7129ee3d62df8426d400bbdc8">Jugador::mod_ranking</a></div><div class="ttdeci">void mod_ranking(const int &amp;r)</div><div class="ttdoc">Modificadora del ranking del parámetro implícito.</div><div class="ttdef"><b>Definition:</b> <a href="_jugador_8cc_source.html#l00020">Jugador.cc:20</a></div></div>
+<div class="ttc" id="aclass_lista___jugadores_html_a04414cb5228feaa5fd3945bee10be92f"><div class="ttname"><a href="class_lista___jugadores.html#a04414cb5228feaa5fd3945bee10be92f">Lista_Jugadores::listar_jugadores</a></div><div class="ttdeci">void listar_jugadores() const</div><div class="ttdoc">Escritura para listar los jugadores.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8cc_source.html#l00136">Lista_Jugadores.cc:136</a></div></div>
+<div class="ttc" id="aclass_lista___jugadores_html_a0b6bf513055773dcfcca635be585f669"><div class="ttname"><a href="class_lista___jugadores.html#a0b6bf513055773dcfcca635be585f669">Lista_Jugadores::numero_jugadores</a></div><div class="ttdeci">int numero_jugadores</div><div class="ttdoc">Numero de jugadores totales.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8hh_source.html#l00045">Lista_Jugadores.hh:45</a></div></div>
+<div class="ttc" id="aclass_lista___jugadores_html_a0eb888209d398b7737fd304093dea8d6"><div class="ttname"><a href="class_lista___jugadores.html#a0eb888209d398b7737fd304093dea8d6">Lista_Jugadores::listar_ranking</a></div><div class="ttdeci">void listar_ranking() const</div><div class="ttdoc">Escritura para listar el ranking.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8cc_source.html#l00129">Lista_Jugadores.cc:129</a></div></div>
+<div class="ttc" id="aclass_lista___jugadores_html_a0ff185c585e5c7ddf570d35e5f32e43a"><div class="ttname"><a href="class_lista___jugadores.html#a0ff185c585e5c7ddf570d35e5f32e43a">Lista_Jugadores::Lista_Jugadores</a></div><div class="ttdeci">Lista_Jugadores()</div><div class="ttdoc">Creadora por defecto.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8cc_source.html#l00016">Lista_Jugadores.cc:16</a></div></div>
+<div class="ttc" id="aclass_lista___jugadores_html_a38e95ae9b6e688551a7c51af6436d23f"><div class="ttname"><a href="class_lista___jugadores.html#a38e95ae9b6e688551a7c51af6436d23f">Lista_Jugadores::mod_estadisticas</a></div><div class="ttdeci">void mod_estadisticas(const vector&lt; string &gt; &amp;v, const Matriz &amp;est, const vector&lt; int &gt; &amp;puntos)</div><div class="ttdoc">Modifica las estadisticas del conjunto de jugadores que hay en el vector v.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8cc_source.html#l00064">Lista_Jugadores.cc:64</a></div></div>
+<div class="ttc" id="aclass_lista___jugadores_html_a40a26f4d41cf60121990bf51fd0c28ad"><div class="ttname"><a href="class_lista___jugadores.html#a40a26f4d41cf60121990bf51fd0c28ad">Lista_Jugadores::consultar_jugador</a></div><div class="ttdeci">void consultar_jugador(const string &amp;p) const</div><div class="ttdoc">Escritura para listar a un jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8cc_source.html#l00153">Lista_Jugadores.cc:153</a></div></div>
+<div class="ttc" id="aclass_lista___jugadores_html_a455fdd21af17a5bba419a8194b8b4134"><div class="ttname"><a href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">Lista_Jugadores::ranking</a></div><div class="ttdeci">vector&lt; Ranking &gt; ranking</div><div class="ttdoc">Vector de ranking de los jugadores Ordenada decrecientemente por numero de puntos.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8hh_source.html#l00043">Lista_Jugadores.hh:43</a></div></div>
+<div class="ttc" id="aclass_lista___jugadores_html_a526cf7437629bc39c95b75c6b9f6b56b"><div class="ttname"><a href="class_lista___jugadores.html#a526cf7437629bc39c95b75c6b9f6b56b">Lista_Jugadores::identificador_jugador</a></div><div class="ttdeci">bool identificador_jugador(const string &amp;ide) const</div><div class="ttdoc">Consultora de si existe un jugador con el mismo identificador.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8cc_source.html#l00100">Lista_Jugadores.cc:100</a></div></div>
+<div class="ttc" id="aclass_lista___jugadores_html_a86113ba11b583ee36e2895080544593d"><div class="ttname"><a href="class_lista___jugadores.html#a86113ba11b583ee36e2895080544593d">Lista_Jugadores::act_punt_jug</a></div><div class="ttdeci">void act_punt_jug(const string &amp;part, const int &amp;punt)</div><div class="ttdoc">Modifica los puntos y, en consequencia, el ranking de un jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8cc_source.html#l00055">Lista_Jugadores.cc:55</a></div></div>
+<div class="ttc" id="aclass_lista___jugadores_html_ab0d4ef534908e57326ee65929ae412c6"><div class="ttname"><a href="class_lista___jugadores.html#ab0d4ef534908e57326ee65929ae412c6">Lista_Jugadores::cons_nombre_jugador</a></div><div class="ttdeci">string cons_nombre_jugador(const int &amp;r) const</div><div class="ttdoc">Consultora el nombre de un jugador dado un ranking.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8cc_source.html#l00092">Lista_Jugadores.cc:92</a></div></div>
+<div class="ttc" id="aclass_lista___jugadores_html_acc5254c4440ecdb9567d114181e4c8d9"><div class="ttname"><a href="class_lista___jugadores.html#acc5254c4440ecdb9567d114181e4c8d9">Lista_Jugadores::baja_jugador</a></div><div class="ttdeci">void baja_jugador(const string &amp;p)</div><div class="ttdoc">Modifica la lista jugadores para eliminar uno.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8cc_source.html#l00038">Lista_Jugadores.cc:38</a></div></div>
+<div class="ttc" id="aclass_lista___jugadores_html_acde1fcb983f382e2d1aeb6af661157c8"><div class="ttname"><a href="class_lista___jugadores.html#acde1fcb983f382e2d1aeb6af661157c8">Lista_Jugadores::num_jugadores</a></div><div class="ttdeci">int num_jugadores() const</div><div class="ttdoc">Consultora de numero de jugadores del circuito.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8cc_source.html#l00096">Lista_Jugadores.cc:96</a></div></div>
+<div class="ttc" id="aclass_lista___jugadores_html_ad137f80fef3c5b8b43293e6beb5d29b3"><div class="ttname"><a href="class_lista___jugadores.html#ad137f80fef3c5b8b43293e6beb5d29b3">Lista_Jugadores::ordenar</a></div><div class="ttdeci">void ordenar()</div><div class="ttdoc">Ordena los parámetros implicitos como el vector ranking y modifica los rankings de los jugadores del ...</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8cc_source.html#l00084">Lista_Jugadores.cc:84</a></div></div>
+<div class="ttc" id="aclass_lista___jugadores_html_ad5a2e05e454611978b188a92e64400ef"><div class="ttname"><a href="class_lista___jugadores.html#ad5a2e05e454611978b188a92e64400ef">Lista_Jugadores::comp</a></div><div class="ttdeci">static bool comp(const Ranking &amp;j1, const Ranking &amp;j2)</div><div class="ttdoc">Función de comparación.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8cc_source.html#l00009">Lista_Jugadores.cc:9</a></div></div>
+<div class="ttc" id="aclass_lista___jugadores_html_ad6af7dd54e4b2eff73ae3a92bc1ea4d8"><div class="ttname"><a href="class_lista___jugadores.html#ad6af7dd54e4b2eff73ae3a92bc1ea4d8">Lista_Jugadores::ljug</a></div><div class="ttdeci">map&lt; string, Jugador &gt; ljug</div><div class="ttdoc">Mapa de los jugadores Ordenada alfabeticamente por nombre de los jugadores.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8hh_source.html#l00040">Lista_Jugadores.hh:40</a></div></div>
+<div class="ttc" id="aclass_lista___jugadores_html_af1633c98c5c01bc3b2a3df0842e0ba55"><div class="ttname"><a href="class_lista___jugadores.html#af1633c98c5c01bc3b2a3df0842e0ba55">Lista_Jugadores::leer</a></div><div class="ttdeci">void leer(const int &amp;j)</div><div class="ttdoc">Operación de lectura.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8cc_source.html#l00106">Lista_Jugadores.cc:106</a></div></div>
+<div class="ttc" id="aclass_lista___jugadores_html_af3d258d09e11524403503496e9dd0079"><div class="ttname"><a href="class_lista___jugadores.html#af3d258d09e11524403503496e9dd0079">Lista_Jugadores::nuevo_jugador</a></div><div class="ttdeci">void nuevo_jugador(const string &amp;p)</div><div class="ttdoc">Modifica la lista jugadores para añadir uno nuevo.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8cc_source.html#l00023">Lista_Jugadores.cc:23</a></div></div>
+<div class="ttc" id="astruct_lista___jugadores_1_1_ranking_html"><div class="ttname"><a href="struct_lista___jugadores_1_1_ranking.html">Lista_Jugadores::Ranking</a></div><div class="ttdoc">Represanta un jugador dentro del vector ranking.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8hh_source.html#l00028">Lista_Jugadores.hh:29</a></div></div>
+<div class="ttc" id="astruct_lista___jugadores_1_1_ranking_html_a20a8a9d8275a99e2fc63c5319ae12711"><div class="ttname"><a href="struct_lista___jugadores_1_1_ranking.html#a20a8a9d8275a99e2fc63c5319ae12711">Lista_Jugadores::Ranking::ranki</a></div><div class="ttdeci">int ranki</div><div class="ttdoc">Numero del ranking.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8hh_source.html#l00035">Lista_Jugadores.hh:35</a></div></div>
+<div class="ttc" id="astruct_lista___jugadores_1_1_ranking_html_ab5524b619ee32e8ba882e29386382edb"><div class="ttname"><a href="struct_lista___jugadores_1_1_ranking.html#ab5524b619ee32e8ba882e29386382edb">Lista_Jugadores::Ranking::nombre</a></div><div class="ttdeci">string nombre</div><div class="ttdoc">Nombre del jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8hh_source.html#l00031">Lista_Jugadores.hh:31</a></div></div>
+<div class="ttc" id="astruct_lista___jugadores_1_1_ranking_html_ad3289cbbfb9862a0833a9e5a454cc9f3"><div class="ttname"><a href="struct_lista___jugadores_1_1_ranking.html#ad3289cbbfb9862a0833a9e5a454cc9f3">Lista_Jugadores::Ranking::punti</a></div><div class="ttdeci">int punti</div><div class="ttdoc">Numero de puntos del jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8hh_source.html#l00033">Lista_Jugadores.hh:33</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

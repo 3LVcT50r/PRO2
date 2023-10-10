@@ -1,0 +1,259 @@
+\hypertarget{class_categorias}{}\doxysection{Referencia de la Clase Categorias}
+\label{class_categorias}\index{Categorias@{Categorias}}
+
+
+Representa las categorías del circuito con sus atrivutos y sus operaciones.  
+
+
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_categorias_a9c8353e5665cf7c4f64d7165776518ac}{Categorias}} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_categorias_a854a8e8c11fb3fbfb9909cc0d447cef9}{cons\+\_\+nombre}} (const int \&c) const
+\begin{DoxyCompactList}\small\item\em Consultora del nombre de una categoría. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_categorias_a58f8e5180e33ee3225321d8ff5bd3d0e}{cons\+\_\+puntos\+\_\+por\+\_\+nivel}} (const int \&c, const int \&k) const
+\begin{DoxyCompactList}\small\item\em Consultora de los puntos por nivel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_categorias_a287bbe3eea41ec7a2c892463514c465a}{leer}} (const int \&c, const int \&k)
+\begin{DoxyCompactList}\small\item\em Operación de lectura y modificadora inicial. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_categorias_aefa0da1a2c42543dea5447399f4bc6d0}{listar\+\_\+categorias}} () const
+\begin{DoxyCompactList}\small\item\em Escritura de la tabla de nombre y de puntos por niveles de cada categoría. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos privados}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_categorias_a9ea549720099db3b48943515d0241307}{numero\+\_\+categorias}}
+\begin{DoxyCompactList}\small\item\em Numero de categorías. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_categorias_a7a69d8252e0a5e89f1b00d4bdbe6b24a}{nom}}
+\begin{DoxyCompactList}\small\item\em Vector de los nombres de las categorías Ordenado por el numero de la categoría. \end{DoxyCompactList}\item 
+Matriz \mbox{\hyperlink{class_categorias_abb93c109817d9436b34a0838e3f97e27}{p\+\_\+lvl}}
+\begin{DoxyCompactList}\small\item\em Matriz de los puntos por cada categoría Ordenado por filas crecientemente por numero de la categoría y las columnas decrecientemente por el nivel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Representa las categorías del circuito con sus atrivutos y sus operaciones. 
+
+Definición en la línea 20 del archivo Categorias.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_categorias_a9c8353e5665cf7c4f64d7165776518ac}\label{class_categorias_a9c8353e5665cf7c4f64d7165776518ac}} 
+\index{Categorias@{Categorias}!Categorias@{Categorias}}
+\index{Categorias@{Categorias}!Categorias@{Categorias}}
+\doxysubsubsection{\texorpdfstring{Categorias()}{Categorias()}}
+{\footnotesize\ttfamily Categorias\+::\+Categorias (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora por defecto. 
+
+Se ejecuta automáticamente al declarar una lista de categorías. \begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado son las categorías no inicializadas. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 7 del archivo Categorias.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{7                        \{}
+\DoxyCodeLine{8   \mbox{\hyperlink{class_categorias_a9ea549720099db3b48943515d0241307}{numero\_categorias}} = 0;}
+\DoxyCodeLine{9 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_categorias_a854a8e8c11fb3fbfb9909cc0d447cef9}\label{class_categorias_a854a8e8c11fb3fbfb9909cc0d447cef9}} 
+\index{Categorias@{Categorias}!cons\_nombre@{cons\_nombre}}
+\index{cons\_nombre@{cons\_nombre}!Categorias@{Categorias}}
+\doxysubsubsection{\texorpdfstring{cons\_nombre()}{cons\_nombre()}}
+{\footnotesize\ttfamily string Categorias\+::cons\+\_\+nombre (\begin{DoxyParamCaption}\item[{const int \&}]{c }\end{DoxyParamCaption}) const}
+
+
+
+Consultora del nombre de una categoría. 
+
+\begin{DoxyPrecond}{Precondición}
+1 $<$= c $<$= numero de categorías 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es el nombre de la categoría . 
+\end{DoxyPostcond}
+
+
+Definición en la línea 11 del archivo Categorias.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11                                                  \{}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_categorias_a7a69d8252e0a5e89f1b00d4bdbe6b24a}{nom}}[c-\/1];}
+\DoxyCodeLine{14 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_categorias_a58f8e5180e33ee3225321d8ff5bd3d0e}\label{class_categorias_a58f8e5180e33ee3225321d8ff5bd3d0e}} 
+\index{Categorias@{Categorias}!cons\_puntos\_por\_nivel@{cons\_puntos\_por\_nivel}}
+\index{cons\_puntos\_por\_nivel@{cons\_puntos\_por\_nivel}!Categorias@{Categorias}}
+\doxysubsubsection{\texorpdfstring{cons\_puntos\_por\_nivel()}{cons\_puntos\_por\_nivel()}}
+{\footnotesize\ttfamily int Categorias\+::cons\+\_\+puntos\+\_\+por\+\_\+nivel (\begin{DoxyParamCaption}\item[{const int \&}]{c,  }\item[{const int \&}]{k }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de los puntos por nivel. 
+
+\begin{DoxyPrecond}{Precondición}
+0 $<$= k $<$= tamaño del vector -\/1. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado son los puntos por nivel. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 16 del archivo Categorias.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16                                                                       \{}
+\DoxyCodeLine{17   }
+\DoxyCodeLine{18   \textcolor{keywordflow}{return} \mbox{\hyperlink{class_categorias_abb93c109817d9436b34a0838e3f97e27}{p\_lvl}}[c-\/1][k-\/1];}
+\DoxyCodeLine{19 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_categorias_a287bbe3eea41ec7a2c892463514c465a}\label{class_categorias_a287bbe3eea41ec7a2c892463514c465a}} 
+\index{Categorias@{Categorias}!leer@{leer}}
+\index{leer@{leer}!Categorias@{Categorias}}
+\doxysubsubsection{\texorpdfstring{leer()}{leer()}}
+{\footnotesize\ttfamily void Categorias\+::leer (\begin{DoxyParamCaption}\item[{const int \&}]{c,  }\item[{const int \&}]{k }\end{DoxyParamCaption})}
+
+
+
+Operación de lectura y modificadora inicial. 
+
+\begin{DoxyPrecond}{Precondición}
+c $>$= 0 y k $>$= 4 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El parámetro implícito con todas sus variables ya declaradas. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 21 del archivo Categorias.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21                                                 \{}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23   vector<string> v\_aux(c);}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25   \mbox{\hyperlink{class_categorias_a9ea549720099db3b48943515d0241307}{numero\_categorias}} = c;}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < c; ++i) \{}
+\DoxyCodeLine{28     \textcolor{keywordtype}{string} n;}
+\DoxyCodeLine{29     cin >> n;}
+\DoxyCodeLine{30     v\_aux[i] = n;}
+\DoxyCodeLine{31   \}}
+\DoxyCodeLine{32   \mbox{\hyperlink{class_categorias_a7a69d8252e0a5e89f1b00d4bdbe6b24a}{nom}} = v\_aux;}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34   Matriz M(c, vector<int>(k));}
+\DoxyCodeLine{35   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < c; ++i) \{}
+\DoxyCodeLine{36     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < k; ++j) \{}
+\DoxyCodeLine{37       \textcolor{keywordtype}{int} l;}
+\DoxyCodeLine{38       cin >> l;}
+\DoxyCodeLine{39       M[i][j] = l;}
+\DoxyCodeLine{40     \}}
+\DoxyCodeLine{41   \}}
+\DoxyCodeLine{42   \mbox{\hyperlink{class_categorias_abb93c109817d9436b34a0838e3f97e27}{p\_lvl}} = M;}
+\DoxyCodeLine{43 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_categorias_aefa0da1a2c42543dea5447399f4bc6d0}\label{class_categorias_aefa0da1a2c42543dea5447399f4bc6d0}} 
+\index{Categorias@{Categorias}!listar\_categorias@{listar\_categorias}}
+\index{listar\_categorias@{listar\_categorias}!Categorias@{Categorias}}
+\doxysubsubsection{\texorpdfstring{listar\_categorias()}{listar\_categorias()}}
+{\footnotesize\ttfamily void Categorias\+::listar\+\_\+categorias (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Escritura de la tabla de nombre y de puntos por niveles de cada categoría. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se expulsa por terminal la tabla de nombres y de puntos por niveles por orden creciente de identificador. 
+\end{DoxyPostcond}
+
+
+Definición en la línea 45 del archivo Categorias.\+cc.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45                                          \{}
+\DoxyCodeLine{46   }
+\DoxyCodeLine{47   \textcolor{keywordtype}{int} col = \mbox{\hyperlink{class_categorias_abb93c109817d9436b34a0838e3f97e27}{p\_lvl}}[0].size();}
+\DoxyCodeLine{48   cout << \mbox{\hyperlink{class_categorias_a9ea549720099db3b48943515d0241307}{numero\_categorias}} << \textcolor{charliteral}{' '} << \mbox{\hyperlink{class_categorias_abb93c109817d9436b34a0838e3f97e27}{p\_lvl}}[0].size() << endl;}
+\DoxyCodeLine{49   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_categorias_a9ea549720099db3b48943515d0241307}{numero\_categorias}}; ++i) \{}
+\DoxyCodeLine{50     cout << \mbox{\hyperlink{class_categorias_a7a69d8252e0a5e89f1b00d4bdbe6b24a}{nom}}[i];}
+\DoxyCodeLine{51     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < col; ++j) \{}
+\DoxyCodeLine{52       cout << \textcolor{charliteral}{' '} << \mbox{\hyperlink{class_categorias_abb93c109817d9436b34a0838e3f97e27}{p\_lvl}}[i][j];}
+\DoxyCodeLine{53     \}}
+\DoxyCodeLine{54     cout << endl;}
+\DoxyCodeLine{55   \}}
+\DoxyCodeLine{56 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de los datos miembro}
+\mbox{\Hypertarget{class_categorias_a9ea549720099db3b48943515d0241307}\label{class_categorias_a9ea549720099db3b48943515d0241307}} 
+\index{Categorias@{Categorias}!numero\_categorias@{numero\_categorias}}
+\index{numero\_categorias@{numero\_categorias}!Categorias@{Categorias}}
+\doxysubsubsection{\texorpdfstring{numero\_categorias}{numero\_categorias}}
+{\footnotesize\ttfamily int Categorias\+::numero\+\_\+categorias\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Numero de categorías. 
+
+
+
+Definición en la línea 25 del archivo Categorias.\+hh.
+
+\mbox{\Hypertarget{class_categorias_a7a69d8252e0a5e89f1b00d4bdbe6b24a}\label{class_categorias_a7a69d8252e0a5e89f1b00d4bdbe6b24a}} 
+\index{Categorias@{Categorias}!nom@{nom}}
+\index{nom@{nom}!Categorias@{Categorias}}
+\doxysubsubsection{\texorpdfstring{nom}{nom}}
+{\footnotesize\ttfamily vector$<$string$>$ Categorias\+::nom\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vector de los nombres de las categorías Ordenado por el numero de la categoría. 
+
+
+
+Definición en la línea 28 del archivo Categorias.\+hh.
+
+\mbox{\Hypertarget{class_categorias_abb93c109817d9436b34a0838e3f97e27}\label{class_categorias_abb93c109817d9436b34a0838e3f97e27}} 
+\index{Categorias@{Categorias}!p\_lvl@{p\_lvl}}
+\index{p\_lvl@{p\_lvl}!Categorias@{Categorias}}
+\doxysubsubsection{\texorpdfstring{p\_lvl}{p\_lvl}}
+{\footnotesize\ttfamily Matriz Categorias\+::p\+\_\+lvl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Matriz de los puntos por cada categoría Ordenado por filas crecientemente por numero de la categoría y las columnas decrecientemente por el nivel. 
+
+
+
+Definición en la línea 31 del archivo Categorias.\+hh.
+
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_categorias_8hh}{Categorias.\+hh}}\item 
+\mbox{\hyperlink{_categorias_8cc}{Categorias.\+cc}}\end{DoxyCompactItemize}

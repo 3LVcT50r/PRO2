@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Circuito de torneos de tenis: Fichero Fuente Lista_Torneos.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Circuito de torneos de tenis
+   &#160;<span id="projectnumber">version-2 mayo-2022 por Víctor Hernández Barragán</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Lista_Torneos.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_lista___torneos_8cc.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_lista___torneos_8hh.html">Lista_Torneos.hh</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_lista___torneos.html#a7c5171bf36616ad428af324676766fba">    7</a></span>&#160;<a class="code" href="class_lista___torneos.html#a7c5171bf36616ad428af324676766fba">Lista_Torneos::Lista_Torneos</a>() {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <a class="code" href="class_torneo.html">Torneo</a> torn;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keywordtype">string</span> ide = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <a class="code" href="class_lista___torneos.html#a7c0f945b50a6fd804148730f3558178d">numero_torneos</a> = 0;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_lista___torneos.html#ae069a1a3b66f407618fa723e024bfc02">   13</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lista___torneos.html#ae069a1a3b66f407618fa723e024bfc02">Lista_Torneos::nuevo_torneo</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;t, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;c) {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <a class="code" href="class_torneo.html">Torneo</a> torn(c);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <a class="code" href="class_lista___torneos.html#aae2ca776d802d73c37c37085e65d68e0">ltorn</a>.insert(make_pair(t, torn));</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  ++<a class="code" href="class_lista___torneos.html#a7c0f945b50a6fd804148730f3558178d">numero_torneos</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_lista___torneos.html#a3ce5753ff35cec172646c3eeae154297">   19</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lista___torneos.html#a3ce5753ff35cec172646c3eeae154297">Lista_Torneos::baja_torneo</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;t, <a class="code" href="class_lista___jugadores.html">Lista_Jugadores</a> &amp;ljug) {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  map&lt;string,Torneo&gt;::iterator it = <a class="code" href="class_lista___torneos.html#aae2ca776d802d73c37c37085e65d68e0">ltorn</a>.find(t);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordflow">if</span> (it-&gt;second.hay_historial()) {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    it-&gt;second.act_est_baja_torneo(ljug);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    ljug.<a class="code" href="class_lista___jugadores.html#ad137f80fef3c5b8b43293e6beb5d29b3">ordenar</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="class_lista___torneos.html#aae2ca776d802d73c37c37085e65d68e0">ltorn</a>.erase(it);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  --<a class="code" href="class_lista___torneos.html#a7c0f945b50a6fd804148730f3558178d">numero_torneos</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_lista___torneos.html#aa100284897c9a1ed51613858a66071d6">   30</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lista___torneos.html#aa100284897c9a1ed51613858a66071d6">Lista_Torneos::iniciar_torneo</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;t, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;n, <a class="code" href="class_lista___jugadores.html">Lista_Jugadores</a> &amp;ljug) {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  vector&lt;string&gt; v(n);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; ++i) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">int</span> rnk;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    cin &gt;&gt; rnk;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    v[i] = ljug.<a class="code" href="class_lista___jugadores.html#ab0d4ef534908e57326ee65929ae412c6">cons_nombre_jugador</a>(rnk);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  map&lt;string,Torneo&gt;::iterator it = <a class="code" href="class_lista___torneos.html#aae2ca776d802d73c37c37085e65d68e0">ltorn</a>.find(t);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  it-&gt;second.inic_torneo(v);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_lista___torneos.html#a2b37e40daac30bef87b2f95c796c702c">   43</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lista___torneos.html#a2b37e40daac30bef87b2f95c796c702c">Lista_Torneos::finalizar_torneo</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;t, <a class="code" href="class_lista___jugadores.html">Lista_Jugadores</a> &amp;ljug, <span class="keyword">const</span> <a class="code" href="class_categorias.html">Categorias</a> &amp;lcat) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  map&lt;string,Torneo&gt;::iterator it = <a class="code" href="class_lista___torneos.html#aae2ca776d802d73c37c37085e65d68e0">ltorn</a>.find(t);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  it-&gt;second.fini_torneo(ljug, lcat);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_lista___torneos.html#a1e7c0b52aa223735ab2b7dbb87b7b707">   48</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lista___torneos.html#a1e7c0b52aa223735ab2b7dbb87b7b707">Lista_Torneos::act_baja_jugador</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;p) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">for</span> (map&lt;string,Torneo&gt;::iterator it = <a class="code" href="class_lista___torneos.html#aae2ca776d802d73c37c37085e65d68e0">ltorn</a>.begin(); it != <a class="code" href="class_lista___torneos.html#aae2ca776d802d73c37c37085e65d68e0">ltorn</a>.end(); ++it) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span> (it-&gt;second.hay_historial()) it-&gt;second.act_puntos_baja_jug(p);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_lista___torneos.html#aa9024eb13fa9aa934474851a768de66b">   54</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_lista___torneos.html#aa9024eb13fa9aa934474851a768de66b">Lista_Torneos::identificador_torneo</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;t)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  map&lt;string,Torneo&gt;::const_iterator it = <a class="code" href="class_lista___torneos.html#aae2ca776d802d73c37c37085e65d68e0">ltorn</a>.find(t);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">if</span> (it != <a class="code" href="class_lista___torneos.html#aae2ca776d802d73c37c37085e65d68e0">ltorn</a>.end()) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_lista___torneos.html#acc354eb8ca24ea82e99fd7303a75df9c">   60</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_lista___torneos.html#acc354eb8ca24ea82e99fd7303a75df9c">Lista_Torneos::num_torneos</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="class_lista___torneos.html#a7c0f945b50a6fd804148730f3558178d">numero_torneos</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_lista___torneos.html#afaa9cf2118e87786aeb892a896dee941">   64</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lista___torneos.html#afaa9cf2118e87786aeb892a896dee941">Lista_Torneos::leer</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;n) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="class_lista___torneos.html#a7c0f945b50a6fd804148730f3558178d">numero_torneos</a> = n;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; n; ++i) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">string</span> ide;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    cin &gt;&gt; ide;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">int</span> cat;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    cin &gt;&gt; cat;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="class_torneo.html">Torneo</a> torn(cat);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="class_lista___torneos.html#aae2ca776d802d73c37c37085e65d68e0">ltorn</a>.insert(make_pair(ide,torn));</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_lista___torneos.html#a4b622251540c269805262dca2842eda5">   80</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_lista___torneos.html#a4b622251540c269805262dca2842eda5">Lista_Torneos::listar_torneos</a>(<span class="keyword">const</span> <a class="code" href="class_categorias.html">Categorias</a> &amp;cat)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  cout &lt;&lt; <a class="code" href="class_lista___torneos.html#a7c0f945b50a6fd804148730f3558178d">numero_torneos</a> &lt;&lt; endl;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">for</span> (map&lt;string,Torneo&gt;::const_iterator it = <a class="code" href="class_lista___torneos.html#aae2ca776d802d73c37c37085e65d68e0">ltorn</a>.begin(); it != <a class="code" href="class_lista___torneos.html#aae2ca776d802d73c37c37085e65d68e0">ltorn</a>.end(); ++it) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    cout &lt;&lt; it-&gt;first &lt;&lt; <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    cout &lt;&lt; cat.<a class="code" href="class_categorias.html#a854a8e8c11fb3fbfb9909cc0d447cef9">cons_nombre</a>(it-&gt;second.cons_categoria()) &lt;&lt; endl;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
+<div class="ttc" id="a_lista___torneos_8hh_html"><div class="ttname"><a href="_lista___torneos_8hh.html">Lista_Torneos.hh</a></div><div class="ttdoc">Especificación de la clase Lista_Torneos.</div></div>
+<div class="ttc" id="aclass_categorias_html"><div class="ttname"><a href="class_categorias.html">Categorias</a></div><div class="ttdoc">Representa las categorías del circuito con sus atrivutos y sus operaciones.</div><div class="ttdef"><b>Definition:</b> <a href="_categorias_8hh_source.html#l00020">Categorias.hh:20</a></div></div>
+<div class="ttc" id="aclass_categorias_html_a854a8e8c11fb3fbfb9909cc0d447cef9"><div class="ttname"><a href="class_categorias.html#a854a8e8c11fb3fbfb9909cc0d447cef9">Categorias::cons_nombre</a></div><div class="ttdeci">string cons_nombre(const int &amp;c) const</div><div class="ttdoc">Consultora del nombre de una categoría.</div><div class="ttdef"><b>Definition:</b> <a href="_categorias_8cc_source.html#l00011">Categorias.cc:11</a></div></div>
+<div class="ttc" id="aclass_lista___jugadores_html"><div class="ttname"><a href="class_lista___jugadores.html">Lista_Jugadores</a></div><div class="ttdoc">Representa la lista de jugadores o ranking con ciertos atrivutos y sus operaciones.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8hh_source.html#l00023">Lista_Jugadores.hh:23</a></div></div>
+<div class="ttc" id="aclass_lista___jugadores_html_ab0d4ef534908e57326ee65929ae412c6"><div class="ttname"><a href="class_lista___jugadores.html#ab0d4ef534908e57326ee65929ae412c6">Lista_Jugadores::cons_nombre_jugador</a></div><div class="ttdeci">string cons_nombre_jugador(const int &amp;r) const</div><div class="ttdoc">Consultora el nombre de un jugador dado un ranking.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8cc_source.html#l00092">Lista_Jugadores.cc:92</a></div></div>
+<div class="ttc" id="aclass_lista___jugadores_html_ad137f80fef3c5b8b43293e6beb5d29b3"><div class="ttname"><a href="class_lista___jugadores.html#ad137f80fef3c5b8b43293e6beb5d29b3">Lista_Jugadores::ordenar</a></div><div class="ttdeci">void ordenar()</div><div class="ttdoc">Ordena los parámetros implicitos como el vector ranking y modifica los rankings de los jugadores del ...</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8cc_source.html#l00084">Lista_Jugadores.cc:84</a></div></div>
+<div class="ttc" id="aclass_lista___torneos_html_a1e7c0b52aa223735ab2b7dbb87b7b707"><div class="ttname"><a href="class_lista___torneos.html#a1e7c0b52aa223735ab2b7dbb87b7b707">Lista_Torneos::act_baja_jugador</a></div><div class="ttdeci">void act_baja_jugador(const string &amp;p)</div><div class="ttdoc">Actualiza los puntos de la edición anterior del jugador mencionado.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___torneos_8cc_source.html#l00048">Lista_Torneos.cc:48</a></div></div>
+<div class="ttc" id="aclass_lista___torneos_html_a2b37e40daac30bef87b2f95c796c702c"><div class="ttname"><a href="class_lista___torneos.html#a2b37e40daac30bef87b2f95c796c702c">Lista_Torneos::finalizar_torneo</a></div><div class="ttdeci">void finalizar_torneo(const string &amp;t, Lista_Jugadores &amp;ljug, const Categorias &amp;lcat)</div><div class="ttdoc">Da la orden de finalizar el torneo torneo con identificador t.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___torneos_8cc_source.html#l00043">Lista_Torneos.cc:43</a></div></div>
+<div class="ttc" id="aclass_lista___torneos_html_a3ce5753ff35cec172646c3eeae154297"><div class="ttname"><a href="class_lista___torneos.html#a3ce5753ff35cec172646c3eeae154297">Lista_Torneos::baja_torneo</a></div><div class="ttdeci">void baja_torneo(const string &amp;t, Lista_Jugadores &amp;ljug)</div><div class="ttdoc">Da de baja un torneo del circuito y se eliminan los puntos de ese torneo.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___torneos_8cc_source.html#l00019">Lista_Torneos.cc:19</a></div></div>
+<div class="ttc" id="aclass_lista___torneos_html_a4b622251540c269805262dca2842eda5"><div class="ttname"><a href="class_lista___torneos.html#a4b622251540c269805262dca2842eda5">Lista_Torneos::listar_torneos</a></div><div class="ttdeci">void listar_torneos(const Categorias &amp;cat) const</div><div class="ttdoc">Escritura para listar los torneos.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___torneos_8cc_source.html#l00080">Lista_Torneos.cc:80</a></div></div>
+<div class="ttc" id="aclass_lista___torneos_html_a7c0f945b50a6fd804148730f3558178d"><div class="ttname"><a href="class_lista___torneos.html#a7c0f945b50a6fd804148730f3558178d">Lista_Torneos::numero_torneos</a></div><div class="ttdeci">int numero_torneos</div><div class="ttdoc">Numero total de los torneos.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___torneos_8hh_source.html#l00031">Lista_Torneos.hh:31</a></div></div>
+<div class="ttc" id="aclass_lista___torneos_html_a7c5171bf36616ad428af324676766fba"><div class="ttname"><a href="class_lista___torneos.html#a7c5171bf36616ad428af324676766fba">Lista_Torneos::Lista_Torneos</a></div><div class="ttdeci">Lista_Torneos()</div><div class="ttdoc">Creadora por defecto.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___torneos_8cc_source.html#l00007">Lista_Torneos.cc:7</a></div></div>
+<div class="ttc" id="aclass_lista___torneos_html_aa100284897c9a1ed51613858a66071d6"><div class="ttname"><a href="class_lista___torneos.html#aa100284897c9a1ed51613858a66071d6">Lista_Torneos::iniciar_torneo</a></div><div class="ttdeci">void iniciar_torneo(const string &amp;t, const int &amp;n, Lista_Jugadores &amp;ljug)</div><div class="ttdoc">Da la orden de iniciar el torneo torneo con identificador t.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___torneos_8cc_source.html#l00030">Lista_Torneos.cc:30</a></div></div>
+<div class="ttc" id="aclass_lista___torneos_html_aa9024eb13fa9aa934474851a768de66b"><div class="ttname"><a href="class_lista___torneos.html#aa9024eb13fa9aa934474851a768de66b">Lista_Torneos::identificador_torneo</a></div><div class="ttdeci">bool identificador_torneo(const string &amp;t) const</div><div class="ttdoc">Consultora de indentificacion del torneo.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___torneos_8cc_source.html#l00054">Lista_Torneos.cc:54</a></div></div>
+<div class="ttc" id="aclass_lista___torneos_html_aae2ca776d802d73c37c37085e65d68e0"><div class="ttname"><a href="class_lista___torneos.html#aae2ca776d802d73c37c37085e65d68e0">Lista_Torneos::ltorn</a></div><div class="ttdeci">map&lt; string, Torneo &gt; ltorn</div><div class="ttdoc">Mapa de los torneos Ordenados alfabeticamente por el nombre de los torneos.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___torneos_8hh_source.html#l00029">Lista_Torneos.hh:29</a></div></div>
+<div class="ttc" id="aclass_lista___torneos_html_acc354eb8ca24ea82e99fd7303a75df9c"><div class="ttname"><a href="class_lista___torneos.html#acc354eb8ca24ea82e99fd7303a75df9c">Lista_Torneos::num_torneos</a></div><div class="ttdeci">int num_torneos() const</div><div class="ttdoc">Consultora del numero de torneos.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___torneos_8cc_source.html#l00060">Lista_Torneos.cc:60</a></div></div>
+<div class="ttc" id="aclass_lista___torneos_html_ae069a1a3b66f407618fa723e024bfc02"><div class="ttname"><a href="class_lista___torneos.html#ae069a1a3b66f407618fa723e024bfc02">Lista_Torneos::nuevo_torneo</a></div><div class="ttdeci">void nuevo_torneo(const string &amp;t, const int &amp;c)</div><div class="ttdoc">Añade un nuevo torneo en el circuito.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___torneos_8cc_source.html#l00013">Lista_Torneos.cc:13</a></div></div>
+<div class="ttc" id="aclass_lista___torneos_html_afaa9cf2118e87786aeb892a896dee941"><div class="ttname"><a href="class_lista___torneos.html#afaa9cf2118e87786aeb892a896dee941">Lista_Torneos::leer</a></div><div class="ttdeci">void leer(const int &amp;n)</div><div class="ttdoc">Operación de lectura.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___torneos_8cc_source.html#l00064">Lista_Torneos.cc:64</a></div></div>
+<div class="ttc" id="aclass_torneo_html"><div class="ttname"><a href="class_torneo.html">Torneo</a></div><div class="ttdoc">Representa a un torneo con ciertos atrivutos y sus operaciones.</div><div class="ttdef"><b>Definition:</b> <a href="_torneo_8hh_source.html#l00025">Torneo.hh:25</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

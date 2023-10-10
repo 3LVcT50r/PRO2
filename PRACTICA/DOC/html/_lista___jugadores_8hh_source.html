@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Circuito de torneos de tenis: Fichero Fuente Lista_Jugadores.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Circuito de torneos de tenis
+   &#160;<span id="projectnumber">version-2 mayo-2022 por Víctor Hernández Barragán</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Lista_Jugadores.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_lista___jugadores_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef _LIST_JUGADORES_HH_</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define _LIST_JUGADORES_HH_</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_jugador_8hh.html">Jugador.hh</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM </span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">typedef</span> vector&lt; vector&lt;int&gt; &gt; Matriz;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_lista___jugadores.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_lista___jugadores.html">Lista_Jugadores</a> {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_lista___jugadores_1_1_ranking.html">   28</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="struct_lista___jugadores_1_1_ranking.html">Ranking</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  {</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_lista___jugadores_1_1_ranking.html#ab5524b619ee32e8ba882e29386382edb">   31</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="struct_lista___jugadores_1_1_ranking.html#ab5524b619ee32e8ba882e29386382edb">nombre</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_lista___jugadores_1_1_ranking.html#ad3289cbbfb9862a0833a9e5a454cc9f3">   33</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_lista___jugadores_1_1_ranking.html#ad3289cbbfb9862a0833a9e5a454cc9f3">punti</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct_lista___jugadores_1_1_ranking.html#a20a8a9d8275a99e2fc63c5319ae12711">   35</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_lista___jugadores_1_1_ranking.html#a20a8a9d8275a99e2fc63c5319ae12711">ranki</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  };</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_lista___jugadores.html#ad6af7dd54e4b2eff73ae3a92bc1ea4d8">   40</a></span>&#160;  map&lt;string,Jugador&gt; <a class="code" href="class_lista___jugadores.html#ad6af7dd54e4b2eff73ae3a92bc1ea4d8">ljug</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">   43</a></span>&#160;  vector&lt;Ranking&gt; <a class="code" href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">ranking</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_lista___jugadores.html#a0b6bf513055773dcfcca635be585f669">   45</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="class_lista___jugadores.html#a0b6bf513055773dcfcca635be585f669">numero_jugadores</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> comp(<span class="keyword">const</span> <a class="code" href="struct_lista___jugadores_1_1_ranking.html">Ranking</a> &amp;j1, <span class="keyword">const</span> <a class="code" href="struct_lista___jugadores_1_1_ranking.html">Ranking</a> &amp;j2);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="comment">//Constructuras</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="class_lista___jugadores.html">Lista_Jugadores</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="comment">//Modificadoras</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> nuevo_jugador(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;p);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">void</span> baja_jugador(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;p);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">void</span> act_punt_jug(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;part, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;punt);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">void</span> mod_estadisticas(<span class="keyword">const</span> vector&lt;string&gt; &amp;v, <span class="keyword">const</span> Matriz &amp;est, <span class="keyword">const</span> vector&lt;int&gt; &amp;puntos);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">void</span> ordenar();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="comment">//Consultoras</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">string</span> cons_nombre_jugador(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;r) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">int</span> num_jugadores() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">bool</span> identificador_jugador(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;ide) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="comment">//Lectura y escritura</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordtype">void</span> leer(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;j);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordtype">void</span> listar_ranking() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordtype">void</span> listar_jugadores() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordtype">void</span> consultar_jugador(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;p) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;};</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_jugador_8hh_html"><div class="ttname"><a href="_jugador_8hh.html">Jugador.hh</a></div><div class="ttdoc">Especificación de la clase Jugador.</div></div>
+<div class="ttc" id="aclass_lista___jugadores_html"><div class="ttname"><a href="class_lista___jugadores.html">Lista_Jugadores</a></div><div class="ttdoc">Representa la lista de jugadores o ranking con ciertos atrivutos y sus operaciones.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8hh_source.html#l00023">Lista_Jugadores.hh:23</a></div></div>
+<div class="ttc" id="aclass_lista___jugadores_html_a0b6bf513055773dcfcca635be585f669"><div class="ttname"><a href="class_lista___jugadores.html#a0b6bf513055773dcfcca635be585f669">Lista_Jugadores::numero_jugadores</a></div><div class="ttdeci">int numero_jugadores</div><div class="ttdoc">Numero de jugadores totales.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8hh_source.html#l00045">Lista_Jugadores.hh:45</a></div></div>
+<div class="ttc" id="aclass_lista___jugadores_html_a455fdd21af17a5bba419a8194b8b4134"><div class="ttname"><a href="class_lista___jugadores.html#a455fdd21af17a5bba419a8194b8b4134">Lista_Jugadores::ranking</a></div><div class="ttdeci">vector&lt; Ranking &gt; ranking</div><div class="ttdoc">Vector de ranking de los jugadores Ordenada decrecientemente por numero de puntos.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8hh_source.html#l00043">Lista_Jugadores.hh:43</a></div></div>
+<div class="ttc" id="aclass_lista___jugadores_html_ad6af7dd54e4b2eff73ae3a92bc1ea4d8"><div class="ttname"><a href="class_lista___jugadores.html#ad6af7dd54e4b2eff73ae3a92bc1ea4d8">Lista_Jugadores::ljug</a></div><div class="ttdeci">map&lt; string, Jugador &gt; ljug</div><div class="ttdoc">Mapa de los jugadores Ordenada alfabeticamente por nombre de los jugadores.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8hh_source.html#l00040">Lista_Jugadores.hh:40</a></div></div>
+<div class="ttc" id="astruct_lista___jugadores_1_1_ranking_html"><div class="ttname"><a href="struct_lista___jugadores_1_1_ranking.html">Lista_Jugadores::Ranking</a></div><div class="ttdoc">Represanta un jugador dentro del vector ranking.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8hh_source.html#l00028">Lista_Jugadores.hh:29</a></div></div>
+<div class="ttc" id="astruct_lista___jugadores_1_1_ranking_html_a20a8a9d8275a99e2fc63c5319ae12711"><div class="ttname"><a href="struct_lista___jugadores_1_1_ranking.html#a20a8a9d8275a99e2fc63c5319ae12711">Lista_Jugadores::Ranking::ranki</a></div><div class="ttdeci">int ranki</div><div class="ttdoc">Numero del ranking.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8hh_source.html#l00035">Lista_Jugadores.hh:35</a></div></div>
+<div class="ttc" id="astruct_lista___jugadores_1_1_ranking_html_ab5524b619ee32e8ba882e29386382edb"><div class="ttname"><a href="struct_lista___jugadores_1_1_ranking.html#ab5524b619ee32e8ba882e29386382edb">Lista_Jugadores::Ranking::nombre</a></div><div class="ttdeci">string nombre</div><div class="ttdoc">Nombre del jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8hh_source.html#l00031">Lista_Jugadores.hh:31</a></div></div>
+<div class="ttc" id="astruct_lista___jugadores_1_1_ranking_html_ad3289cbbfb9862a0833a9e5a454cc9f3"><div class="ttname"><a href="struct_lista___jugadores_1_1_ranking.html#ad3289cbbfb9862a0833a9e5a454cc9f3">Lista_Jugadores::Ranking::punti</a></div><div class="ttdeci">int punti</div><div class="ttdoc">Numero de puntos del jugador.</div><div class="ttdef"><b>Definition:</b> <a href="_lista___jugadores_8hh_source.html#l00033">Lista_Jugadores.hh:33</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

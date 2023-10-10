@@ -1,0 +1,19 @@
+Lista_jugadores:
+	-nuevo_jugador
+	-baja_jugador
+	-listar_jugadores
+	-listar_ranking
+	-consultar_jugador
+
+Lista_torneos:
+	-nuevo_torneo
+	-baja_torneo
+	-listar_torneos
+	-iniciar_torneo
+	-finalizar_torneo
+
+Lista_categorias
+	-listar_categorias
+
+
+/usr/bin/perl

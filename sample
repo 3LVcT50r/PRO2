@@ -1,0 +1,74 @@
+4 8
+Grand_Slam
+Masters_1000
+ATP_500
+ATP_250
+2000 1200 720 360 180 90 45 10
+1000 600 360 180 90 45 25 10
+500 300 180 90 45 20  0  0
+250 150 90 45 20  0  0  0
+5
+Wimbledon 1
+Indian_Wells 2
+Barcelona 3
+Estoril 4
+Cincinnati 2
+10
+Auger-Aliassime
+Sinner
+Hurkacz
+Norrie
+Schwartzman
+Shapovalov
+Bautista
+Fritz
+Carreno
+Opelka
+Nadal
+nj Fognini
+nj Paul
+nj Korda
+nj Humbert
+nj Davidovich
+nj Krajinovic
+nj Ivashka
+nj Lajovic
+nj Brooksby
+nj Goffin
+lista_categorias
+lr
+nj Pau
+nj Fritz
+iniciar_torneo Estoril
+13
+1 2 4 6 7 8 9 10 11 15 16 19 20
+bj Fritz
+iniciar_torneo Barcelona
+9
+2 3 4 5 6 7 8 9 10
+bj Nadal
+finalizar_torneo Estoril
+7-2,6-3
+2-6,7-6,6-2
+1-0
+0
+4-6,6-7
+0 0
+6-7,7-6,6-1
+6-1,6-2
+0 0
+1-6,6-2,7-6
+0 0
+2-6,7-6,6-2
+1-0
+0
+6-1,5-2
+0 0
+1-0
+0
+6-1,5-2
+0 0
+lj
+lr
+lt
+fin

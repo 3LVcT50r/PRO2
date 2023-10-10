@@ -1,0 +1,247 @@
+\hypertarget{class_lista___torneo}{}\doxysection{Referencia de la Clase Lista\+\_\+\+Torneo}
+\label{class_lista___torneo}\index{Lista\_Torneo@{Lista\_Torneo}}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lista___torneo_a2a59d097f3b855818d411c129636ee76}{Lista\+\_\+\+Torneo}} ()
+\begin{DoxyCompactList}\small\item\em Creadora por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista___torneo_a3b15d64ba1c6627cfe48e9864d865aab}{Lista\+\_\+\+Torneo}} (int n)
+\begin{DoxyCompactList}\small\item\em Creadora con el numero de torneos inicializada. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista___torneo_ad4cc6be009a163a29813254ab7669b9a}{Lista\+\_\+\+Torneo}} (const \mbox{\hyperlink{class_lista___torneo}{Lista\+\_\+\+Torneo}} \&ltorn)
+\begin{DoxyCompactList}\small\item\em Creadora copia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista___torneo_af6650d5292342274b808e54e1a6f5135}{$\sim$\+Lista\+\_\+\+Torneo}} ()
+\item 
+void \mbox{\hyperlink{class_lista___torneo_a561cb675c6243ee630cf599549792f9b}{nuevo\+\_\+torneo}} (const string \&t, int c)
+\begin{DoxyCompactList}\small\item\em Añade un nuevo torneo en el circuito. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista___torneo_a2b85108c4aacb75235a747638ea6b715}{baja\+\_\+torneo}} (const string \&t)
+\begin{DoxyCompactList}\small\item\em Da de baja un torneo del circuito y se eliminan los puntos de ese torneo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista___torneo_a5c40e72c1bf50b48ab56cf9984eb56ec}{iniciar\+\_\+torneo}} (string t, int n, const \mbox{\hyperlink{class_categorias}{Categorias}} \&lcat)
+\begin{DoxyCompactList}\small\item\em Inicia un torneo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista___torneo_a26263801352324bf1cb6b3224914c923}{finalizar\+\_\+torneo}} (string t)
+\begin{DoxyCompactList}\small\item\em Finaliza un torneo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_lista___torneo_a86007825a1c31a4c3cc641129be25096}{identificador\+\_\+torneo}} (string t) const
+\begin{DoxyCompactList}\small\item\em Consultora de indentificacion del torneo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_lista___torneo_a258f5cac49cae54a6b090b021a422c7c}{numero\+\_\+torneos}} () const
+\begin{DoxyCompactList}\small\item\em Consultora del numero de torneos. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_torneo}{Torneo}} \mbox{\hyperlink{class_lista___torneo_a0bbec4f4743731dcc6a133929c5c11be}{buscar\+\_\+torneo}} (string t) const
+\begin{DoxyCompactList}\small\item\em Te retorna un torneo individual a partir de la identificación. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista___torneo_a751a18d868bdd9f2dde32cdd4aca9a15}{leer}} (int num\+\_\+torneos)
+\begin{DoxyCompactList}\small\item\em Operación de lectura. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista___torneo_ac0bb9964850d49c401ff458bc0abc8b5}{listar\+\_\+torneos}} () const
+\begin{DoxyCompactList}\small\item\em Escritura para listar los torneos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+
+
+Definición en la línea 19 del archivo Lista\+\_\+\+Torneos.\+hh.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_lista___torneo_a2a59d097f3b855818d411c129636ee76}\label{class_lista___torneo_a2a59d097f3b855818d411c129636ee76}} 
+\index{Lista\_Torneo@{Lista\_Torneo}!Lista\_Torneo@{Lista\_Torneo}}
+\index{Lista\_Torneo@{Lista\_Torneo}!Lista\_Torneo@{Lista\_Torneo}}
+\doxysubsubsection{\texorpdfstring{Lista\_Torneo()}{Lista\_Torneo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Lista\+\_\+\+Torneo\+::\+Lista\+\_\+\+Torneo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creadora por defecto. 
+
+Se ejecuta automáticamente al declarar una lista de torneos. \begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es una lista de torneos no inicializada 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_lista___torneo_a3b15d64ba1c6627cfe48e9864d865aab}\label{class_lista___torneo_a3b15d64ba1c6627cfe48e9864d865aab}} 
+\index{Lista\_Torneo@{Lista\_Torneo}!Lista\_Torneo@{Lista\_Torneo}}
+\index{Lista\_Torneo@{Lista\_Torneo}!Lista\_Torneo@{Lista\_Torneo}}
+\doxysubsubsection{\texorpdfstring{Lista\_Torneo()}{Lista\_Torneo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Lista\+\_\+\+Torneo\+::\+Lista\+\_\+\+Torneo (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Creadora con el numero de torneos inicializada. 
+
+\begin{DoxyPrecond}{Precondición}
+numero de torneos n $>$= 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es una lista de torneos inicializada con el numero de torneos 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_lista___torneo_ad4cc6be009a163a29813254ab7669b9a}\label{class_lista___torneo_ad4cc6be009a163a29813254ab7669b9a}} 
+\index{Lista\_Torneo@{Lista\_Torneo}!Lista\_Torneo@{Lista\_Torneo}}
+\index{Lista\_Torneo@{Lista\_Torneo}!Lista\_Torneo@{Lista\_Torneo}}
+\doxysubsubsection{\texorpdfstring{Lista\_Torneo()}{Lista\_Torneo()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Lista\+\_\+\+Torneo\+::\+Lista\+\_\+\+Torneo (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_lista___torneo}{Lista\+\_\+\+Torneo}} \&}]{ltorn }\end{DoxyParamCaption})}
+
+
+
+Creadora copia. 
+
+\begin{DoxyPrecond}{Precondición}
+El objeto \mbox{\hyperlink{class_lista___torneo}{Lista\+\_\+\+Torneo}} tiene que estar bien declarado 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es una copia del objeto original 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_lista___torneo_af6650d5292342274b808e54e1a6f5135}\label{class_lista___torneo_af6650d5292342274b808e54e1a6f5135}} 
+\index{Lista\_Torneo@{Lista\_Torneo}!````~Lista\_Torneo@{$\sim$Lista\_Torneo}}
+\index{````~Lista\_Torneo@{$\sim$Lista\_Torneo}!Lista\_Torneo@{Lista\_Torneo}}
+\doxysubsubsection{\texorpdfstring{$\sim$Lista\_Torneo()}{~Lista\_Torneo()}}
+{\footnotesize\ttfamily Lista\+\_\+\+Torneo\+::$\sim$\+Lista\+\_\+\+Torneo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_lista___torneo_a561cb675c6243ee630cf599549792f9b}\label{class_lista___torneo_a561cb675c6243ee630cf599549792f9b}} 
+\index{Lista\_Torneo@{Lista\_Torneo}!nuevo\_torneo@{nuevo\_torneo}}
+\index{nuevo\_torneo@{nuevo\_torneo}!Lista\_Torneo@{Lista\_Torneo}}
+\doxysubsubsection{\texorpdfstring{nuevo\_torneo()}{nuevo\_torneo()}}
+{\footnotesize\ttfamily void Lista\+\_\+\+Torneo\+::nuevo\+\_\+torneo (\begin{DoxyParamCaption}\item[{const string \&}]{t,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Añade un nuevo torneo en el circuito. 
+
+\begin{DoxyPrecond}{Precondición}
+t tiene que ser una identificación correcta. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+La lista de torneos tiene ahora un torneo más con el identificador t y la categoria c 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_lista___torneo_a2b85108c4aacb75235a747638ea6b715}\label{class_lista___torneo_a2b85108c4aacb75235a747638ea6b715}} 
+\index{Lista\_Torneo@{Lista\_Torneo}!baja\_torneo@{baja\_torneo}}
+\index{baja\_torneo@{baja\_torneo}!Lista\_Torneo@{Lista\_Torneo}}
+\doxysubsubsection{\texorpdfstring{baja\_torneo()}{baja\_torneo()}}
+{\footnotesize\ttfamily void Lista\+\_\+\+Torneo\+::baja\+\_\+torneo (\begin{DoxyParamCaption}\item[{const string \&}]{t }\end{DoxyParamCaption})}
+
+
+
+Da de baja un torneo del circuito y se eliminan los puntos de ese torneo. 
+
+\begin{DoxyPrecond}{Precondición}
+t $>$= 0 y la identificador del torneo tiene que estar en la lista de torneos. De no ser así,se imprime un mensaje de error. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+La lista de torneos tiene ahora un torneo menos y con los puntos de ese torneo eliminados. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_lista___torneo_a5c40e72c1bf50b48ab56cf9984eb56ec}\label{class_lista___torneo_a5c40e72c1bf50b48ab56cf9984eb56ec}} 
+\index{Lista\_Torneo@{Lista\_Torneo}!iniciar\_torneo@{iniciar\_torneo}}
+\index{iniciar\_torneo@{iniciar\_torneo}!Lista\_Torneo@{Lista\_Torneo}}
+\doxysubsubsection{\texorpdfstring{iniciar\_torneo()}{iniciar\_torneo()}}
+{\footnotesize\ttfamily void Lista\+\_\+\+Torneo\+::iniciar\+\_\+torneo (\begin{DoxyParamCaption}\item[{string}]{t,  }\item[{int}]{n,  }\item[{const \mbox{\hyperlink{class_categorias}{Categorias}} \&}]{lcat }\end{DoxyParamCaption})}
+
+
+
+Inicia un torneo. 
+
+\begin{DoxyPrecond}{Precondición}
+t tiene que ser un identificador válido y n $>$= 0 n $<$= total de \mbox{\hyperlink{class_lista___jugadores}{Lista\+\_\+\+Jugadores}}. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se inscribe los participantes del torneo, se imprime los emparejamientos y se inicia el torneo. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_lista___torneo_a26263801352324bf1cb6b3224914c923}\label{class_lista___torneo_a26263801352324bf1cb6b3224914c923}} 
+\index{Lista\_Torneo@{Lista\_Torneo}!finalizar\_torneo@{finalizar\_torneo}}
+\index{finalizar\_torneo@{finalizar\_torneo}!Lista\_Torneo@{Lista\_Torneo}}
+\doxysubsubsection{\texorpdfstring{finalizar\_torneo()}{finalizar\_torneo()}}
+{\footnotesize\ttfamily void Lista\+\_\+\+Torneo\+::finalizar\+\_\+torneo (\begin{DoxyParamCaption}\item[{string}]{t }\end{DoxyParamCaption})}
+
+
+
+Finaliza un torneo. 
+
+\begin{DoxyPrecond}{Precondición}
+t tiene que ser un identificador válido. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se imprime los resultados de los emparejamientos y se finaliza el torneo. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_lista___torneo_a86007825a1c31a4c3cc641129be25096}\label{class_lista___torneo_a86007825a1c31a4c3cc641129be25096}} 
+\index{Lista\_Torneo@{Lista\_Torneo}!identificador\_torneo@{identificador\_torneo}}
+\index{identificador\_torneo@{identificador\_torneo}!Lista\_Torneo@{Lista\_Torneo}}
+\doxysubsubsection{\texorpdfstring{identificador\_torneo()}{identificador\_torneo()}}
+{\footnotesize\ttfamily bool Lista\+\_\+\+Torneo\+::identificador\+\_\+torneo (\begin{DoxyParamCaption}\item[{string}]{t }\end{DoxyParamCaption}) const}
+
+
+
+Consultora de indentificacion del torneo. 
+
+\begin{DoxyPrecond}{Precondición}
+t tiene que ser una identificación correcta. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+1 si existe un torneo con la misma identificación, 0 si no existe. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_lista___torneo_a258f5cac49cae54a6b090b021a422c7c}\label{class_lista___torneo_a258f5cac49cae54a6b090b021a422c7c}} 
+\index{Lista\_Torneo@{Lista\_Torneo}!numero\_torneos@{numero\_torneos}}
+\index{numero\_torneos@{numero\_torneos}!Lista\_Torneo@{Lista\_Torneo}}
+\doxysubsubsection{\texorpdfstring{numero\_torneos()}{numero\_torneos()}}
+{\footnotesize\ttfamily int Lista\+\_\+\+Torneo\+::numero\+\_\+torneos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultora del numero de torneos. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cierto} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es el numero de torneos que tiene el paremetro implícito. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_lista___torneo_a0bbec4f4743731dcc6a133929c5c11be}\label{class_lista___torneo_a0bbec4f4743731dcc6a133929c5c11be}} 
+\index{Lista\_Torneo@{Lista\_Torneo}!buscar\_torneo@{buscar\_torneo}}
+\index{buscar\_torneo@{buscar\_torneo}!Lista\_Torneo@{Lista\_Torneo}}
+\doxysubsubsection{\texorpdfstring{buscar\_torneo()}{buscar\_torneo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_torneo}{Torneo}} Lista\+\_\+\+Torneo\+::buscar\+\_\+torneo (\begin{DoxyParamCaption}\item[{string}]{t }\end{DoxyParamCaption}) const}
+
+
+
+Te retorna un torneo individual a partir de la identificación. 
+
+\begin{DoxyPrecond}{Precondición}
+t es un identificador válido. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+El resultado es un torneo completo. 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_lista___torneo_a751a18d868bdd9f2dde32cdd4aca9a15}\label{class_lista___torneo_a751a18d868bdd9f2dde32cdd4aca9a15}} 
+\index{Lista\_Torneo@{Lista\_Torneo}!leer@{leer}}
+\index{leer@{leer}!Lista\_Torneo@{Lista\_Torneo}}
+\doxysubsubsection{\texorpdfstring{leer()}{leer()}}
+{\footnotesize\ttfamily void Lista\+\_\+\+Torneo\+::leer (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+torneos }\end{DoxyParamCaption})}
+
+
+
+Operación de lectura. 
+
+\begin{DoxyPrecond}{Precondición}
+t $>$= 0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+el objeto con todos sus torneos declarados 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_lista___torneo_ac0bb9964850d49c401ff458bc0abc8b5}\label{class_lista___torneo_ac0bb9964850d49c401ff458bc0abc8b5}} 
+\index{Lista\_Torneo@{Lista\_Torneo}!listar\_torneos@{listar\_torneos}}
+\index{listar\_torneos@{listar\_torneos}!Lista\_Torneo@{Lista\_Torneo}}
+\doxysubsubsection{\texorpdfstring{listar\_torneos()}{listar\_torneos()}}
+{\footnotesize\ttfamily void Lista\+\_\+\+Torneo\+::listar\+\_\+torneos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Escritura para listar los torneos. 
+
+\begin{DoxyPrecond}{Precondición}
+{\itshape cert} 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+Se expulsa por terminal el listamiento de los torneos en un orden en concreto. 
+\end{DoxyPostcond}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_lista___torneos_8hh}{Lista\+\_\+\+Torneos.\+hh}}\end{DoxyCompactItemize}
