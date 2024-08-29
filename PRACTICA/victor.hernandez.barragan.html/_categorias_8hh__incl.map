@@ -1,7 +1,0 @@
-<map id="Categorias.hh" name="Categorias.hh">
-<area shape="rect" id="node1" title=" " alt="" coords="59,5,161,32"/>
-<area shape="rect" id="node2" href="$_lista___torneos_8hh.html" title="Especificación de la clase Lista_Torneos." alt="" coords="49,80,171,107"/>
-<area shape="rect" id="node3" href="$_torneo_8hh.html" title="Especificacion de la clase Torneo." alt="" coords="5,155,84,181"/>
-<area shape="rect" id="node5" href="$_lista___jugadores_8hh.html" title="Especificación de la clase Lista_Jugadores." alt="" coords="108,155,243,181"/>
-<area shape="rect" id="node4" href="$_jugador_8hh.html" title="Especificación de la clase Jugador." alt="" coords="67,229,153,256"/>
-</map>
